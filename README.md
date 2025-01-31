@@ -1,5 +1,5 @@
 
-# Reinstalling GRUB Bootloader
+# Reinstalling GRUB Boot Entries
 
 ## Boot Into Live Environment
 - You can use Arch ISO or any other Linux ISO available to you
