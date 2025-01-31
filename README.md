@@ -1,5 +1,4 @@
 
-Copy
 
 # Boot Into Live Environment
 
