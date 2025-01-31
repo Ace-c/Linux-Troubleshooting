@@ -1,5 +1,3 @@
-# Guide to restore boot entry in Arch Linux
-
 Boot Into live Envirnoment -
 
 You can use arch iso 
@@ -15,13 +13,14 @@ mount /dev/sda6 /mnt
 
 Mouting EFI partition
 mount /dev/sda5 /mnt/boot
+'''
 
 Bind System Directories 
 mount --bind /dev /mnt/dev
 mount --bind /proc /mnt/proc
 mount --bind /sys /mnt/sys
 mount --bind /run /mnt/run
-
+'''
 Chroot Into The System :
 arch-chroot /mnt
 
