@@ -1,5 +1,4 @@
-Here's the content converted to Markdown format:
-markdown
+
 Copy
 
 # Boot Into Live Environment
