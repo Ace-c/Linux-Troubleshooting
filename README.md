@@ -1,35 +1,62 @@
-Boot Into live Envirnoment -
+Here's the content converted to Markdown format:
+markdown
+Copy
 
-You can use arch iso 
-or whatever other linux iso availabe to you
+# Boot Into Live Environment
 
-Mount Necessary Partitions :
+You can use Arch ISO or any other Linux ISO available to you.
 
-Find your partition 
+## Mount Necessary Partitions
+
+### Find your partition
+```bash
 lsblk
 
-Mounting root partition (You have put your parition there In which your distro was Inst.)
+Mounting root partition
+
+(Mount the partition where your distribution is installed)
+bash
+Copy
+
 mount /dev/sda6 /mnt
 
-Mouting EFI partition
+Mounting EFI partition
+bash
+Copy
+
 mount /dev/sda5 /mnt/boot
 
-Bind System Directories 
+Bind System Directories
+bash
+Copy
+
 mount --bind /dev /mnt/dev
 mount --bind /proc /mnt/proc
 mount --bind /sys /mnt/sys
 mount --bind /run /mnt/run
 
-Chroot Into The System :
+Chroot Into The System
+bash
+Copy
+
 arch-chroot /mnt
 
-Reinstall GRUB and Add Boot Entries :
+Reinstall GRUB and Add Boot Entries
+bash
+Copy
+
 grub-install --target=x86_64-efi --bootloader-id=ArchLinux --efi-directory=/boot/efi
 
-Update grub
+Update GRUB
+bash
+Copy
+
 grub-mkconfig -o /boot/grub/grub.cfg
 
-Exit And Reboot The System 
+Exit And Reboot The System
+bash
+Copy
+
 exit
 umount -l /mnt
 reboot
