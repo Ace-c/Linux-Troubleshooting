@@ -1,4 +1,3 @@
-Here's the content converted to Markdown format:
 markdown
 Copy
 
@@ -9,18 +8,21 @@ You can use Arch ISO or any other Linux ISO available to you.
 ## Mount Necessary Partitions
 
 ### Find your partition
+
 ```bash
 lsblk
 
 Mounting root partition
 
-(Mount the partition where your distribution is installed)
+(Replace sda6 with your root partition)
 bash
 Copy
 
 mount /dev/sda6 /mnt
 
 Mounting EFI partition
+
+(Replace sda5 with your EFI partition)
 bash
 Copy
 
