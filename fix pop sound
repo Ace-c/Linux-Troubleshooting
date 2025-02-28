@@ -29,3 +29,6 @@ options snd_hda_intel power_save=0
 After then save it and reboot.
 
 
+```bash
+echo "Hello, World!"
+```
