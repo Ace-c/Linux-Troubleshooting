@@ -1,9 +1,10 @@
 # Fixing Pop Sound
 
 Change its value from 1 to 0
-'''bash
+
+``` bash
 sudo nano /sys/module/snd_hda_intel/parameters/power_save
-'''
+```
 
 and Y to N to the this one
 '''
@@ -15,12 +16,12 @@ If distortions(noise, buzzing, crackling ...) are gone, make it permanent, Then 
 cd /etc/modprobe.d
 
 
- and make a new file named: audio_disable_powersave.conf 
+ and make a new file named: audio_disable_powersave.conf
 
 sudo nano audio_disable_powersave.conf
 Then :
 
-insert following in the conf file: 
+insert following in the conf file:
 options snd_hda_intel power_save=0
 
 
