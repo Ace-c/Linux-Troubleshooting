@@ -1,7 +1,0 @@
-# Fix pop/sound in linux
-
-## Change value to 1 to 0 to following 
-
-```bash
-sudo nano /sys/module/snd_hda_intel/parameters/power_save
-```
