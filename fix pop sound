@@ -2,7 +2,7 @@
 
 Change its value from 1 to 0
 
-``` bash
+``` 
 sudo nano /sys/module/snd_hda_intel/parameters/power_save
 ```
 
