@@ -1,0 +1,27 @@
+# Fixing Pop Sound in Linux Audio  
+
+To eliminate popping sounds in your audio, follow these steps:  
+
+First, test if disabling power saving resolves the issue:  
+
+```bash
+sudo nano /sys/module/snd_hda_intel/parameters/power_save
+
+Change its value from 1 to 0.
+
+sudo nano /sys/module/snd_hda_intel/parameters/power_save_controller
+
+Change Y to N.
+
+If the distortions (noise, buzzing, crackling, etc.) are gone, make the changes permanent:
+
+cd /etc/modprobe.d
+sudo nano audio_disable_powersave.conf
+
+Add the following line:
+
+options snd_hda_intel power_save=0
+
+Save the file and exit, then apply the changes by rebooting your system:
+
+sudo reboot
