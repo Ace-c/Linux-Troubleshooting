@@ -8,8 +8,8 @@ sudo nano /sys/module/snd_hda_intel/parameters/power_save_controller
 
 
 Now, make the changes permanent:
-1. Create File -
 
+1. Create File -
 cd /etc/modprobe.d
 sudo nano audio_disable_powersave.conf
 
