@@ -1,3 +1,3 @@
 # NOTE :
 
-Some works, some not for other 'Linux Distro'
+Some works, some not for other 'Distro'
