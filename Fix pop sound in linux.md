@@ -13,14 +13,14 @@ sudo nano /sys/module/snd_hda_intel/parameters/power_save_controller
 
 ### Now, make the changes permanent:
 
-* Create File in this location **/etc/modprobe.d**
+* Create File to this location **/etc/modprobe.d**
 ```
 sudo nano audio_disable_powersave.conf
 ```
-* Add the following line to newly created:
+* Add the following line to it:
 ```
 options snd_hda_intel power_save=0
 ```
 
-* Save the file and exit, then apply the changes by rebooting your system:
-sudo reboot
+* Save the file and exit.
+* Reboot your system, to check wheather it's working or not.
