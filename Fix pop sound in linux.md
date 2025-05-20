@@ -1,12 +1,12 @@
 # Fixing Irritating Pop Sound in Linux 
 
 
-* Change the value of this config, from 1 to 0
+* Change the value from 1 to 0, to this config file :
 ```
 sudo nano /sys/module/snd_hda_intel/parameters/power_save
 ```
 
-* Change the value " Y to N " to this config 
+* Also, Change the value " Y to N " to this one too
 ```
 sudo nano /sys/module/snd_hda_intel/parameters/power_save_controller
 ```
