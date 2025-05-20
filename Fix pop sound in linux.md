@@ -1,4 +1,4 @@
-# Fixing Pop Sound in Linux 
+# Fixing Irritating Pop Sound in Linux 
 
 
 * Change the value of this config, from 1 to 0
