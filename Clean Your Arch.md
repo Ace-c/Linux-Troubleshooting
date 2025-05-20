@@ -3,35 +3,34 @@
 
 * **Clear Package Cache** -
   
-  ```
+```
+```
+* **Remove Orphaned or Unused Package** -
+
+To list packages :
+```
+sudo pacman -Qtdq
+```
+To remove everything that is listed :
+```
+sudo pacman -Rns $(pacman -Qtdq)
+```
+```
+-R flag remove packages
+-n flag removes configuration files
+-s flag removes dependencies that aren't required by other packages
+```
   
-  ```
-* **Remove Orphaned and Unused Package** -
+Want to remove only particular package :
+```
+pacman -Rns 'package'
+```
 
-  To list packages :
-  ```
-  sudo pacman -Qtdq
-  ```
-  To remove everything that is listed :
-  ```
-  sudo pacman -Rns $(pacman -Qtdq)
-  ```
-  ```
-  -R flag remove packages
-  -n flag removes configuration files
-  -s flag removes dependencies that aren't required by other packages
-  ```
-  
-  Want to remove only particular package :
-  ```
-  pacman -Rns 'package'
-  ```
-
-* Remove AUR builds - 
-
-  ```
-
-  ```
+* **Remove AUR builds** -
+To remove Manually :
+```
+rm -rf ./*/ 
+```
 
 
 ## 2. System Cache & Temp Files :
