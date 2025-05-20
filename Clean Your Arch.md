@@ -2,9 +2,17 @@
 ## 1. Package Cleansing :
 
 ### Clear Package Cache :
-  
+
+* List packages
 ```
+sudo ls /var/cache/pacman/pkg/ | wc -l
 ```
+* Check disk space used by cache folder
+```
+du -sh /var/cache/pacman/pkg/
+```
+
+
 ### Remove Orphaned or Unused Packages :
 
 * To list packages 
@@ -24,18 +32,15 @@ pacman -Rns 'package'
 
 ### Remove AUR builds :
 
-Clean yay -
+
+* Clean build cache and keep no older or unused versions, here yay, or you can use paru too
 ```
 yay -Scc
 ```
-For Paru -
-```
-paru -Scc
-```
 
-To remove Manually -
+* Clean just the build files but not package cache 
 ```
-rm -rf ./*/ 
+yay -Sc
 ```
 
 
