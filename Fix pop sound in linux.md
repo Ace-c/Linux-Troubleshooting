@@ -1,12 +1,12 @@
 # Fixing Pop Sound in Linux 
 
 
-* Do Change the value of this config file, from 1 to 0
+* Change the value of this config, from 1 to 0
 ```
 sudo nano /sys/module/snd_hda_intel/parameters/power_save
 ```
 
-* Do change the value to Y to N to this location
+* Change the value " Y to N " to this config 
 ```
 sudo nano /sys/module/snd_hda_intel/parameters/power_save_controller
 ```
