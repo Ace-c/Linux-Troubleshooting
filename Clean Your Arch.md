@@ -95,6 +95,21 @@ rmlint
 
 ## 4. System Logs & Journals :
 
+* Check space used by journals
+```
+journalctl --disk-usage
+```
+
+* Remove logs older than 3 days
+```
+journalctl --vacuum-time=3d
+```
+
+* Limit total journal size to 500MB
+```
+sudo journalctl --vacuum-size=500M
+```
+
 
 ## 5. Manually remove stuffs :
 
