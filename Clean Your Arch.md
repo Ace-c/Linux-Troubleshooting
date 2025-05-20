@@ -1,7 +1,7 @@
 
 ## 1. Package Cleansing :
 
-### Clear Package Cache :
+### Cleaning Pacman Package Cache :
 
 * List packages
 ```
@@ -64,11 +64,13 @@ du -sh ~/.cache/
 ```
 rm -rf ~/.cache/*
 ```
+* Remove yay and paru caches
+```
+rm -rf ~/.cache/yay/
+rm -rf ~/.cache/paru/
+```
 
-> Is it safe to delete .cache?
-> Yes, It's generally safe but not when you storing something unusual, also close all apps before cleaning
-
-* Use Bleachbit, It'll clean caches and junk files for specific apps as you want
+* Want to clean caches and junk files for specific application, Use **Bleachbit**
 ```
 sudo pacman -S bleachbit
 ```
@@ -76,8 +78,16 @@ sudo pacman -S bleachbit
 
 ## 3. Temp Files :
 
-* Remove duplicates, empty files, empty directories and broken symlinks :
+* Remove system temp files
+```
+sudo rm -rf /tmp/*
+sudo rm -rf /var/tmp/*
+```
 
+* Remove duplicates, empty files, empty directories and broken symlinks :
+```
+sudo pacman -S rmlint
+```
 ```
 rmlint
 ```
