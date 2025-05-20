@@ -11,7 +11,15 @@ sudo ls /var/cache/pacman/pkg/ | wc -l
 ```
 du -sh /var/cache/pacman/pkg/
 ```
+* Remove all packages from the cache
+```
+sudo pacman -Scc
+```
 
+* Clean old versions while keeping the most recent ones
+```
+sudo pacman -Sc
+```
 
 ### Remove Orphaned or Unused Packages :
 
@@ -44,27 +52,42 @@ yay -Sc
 ```
 
 
-## 2. System Cache & Temp Files :
+## 2. Cleaning User Cache :
 
-* Remove /home Cache :
+* Check size of the home cache directory 
 
-  ```
-  
-  ```
-  
+```
+du -sh ~/.cache/
+```
+
+* Delete all the cache from .cache
+```
+rm -rf ~/.cache/*
+```
+
+> Is it safe to delete .cache?
+> Yes, It's generally safe but not when you storing something unusual, also close all apps before cleaning
+
+* Use Bleachbit, It'll clean caches and junk files for specific apps as you want
+```
+sudo pacman -S bleachbit
+```
+
+
+## 3. Temp Files :
+
 * Remove duplicates, empty files, empty directories and broken symlinks :
 
-  ```
-  rmlint
-  ```
-
-  
-
-## 3. Logs & Journals :
+```
+rmlint
+```
 
 
-## 4. Manually remove stuffs :
+## 4. System Logs & Journals :
 
-**Want to remove bin files?**
+
+## 5. Manually remove stuffs :
+
+**Remove bin files?**
 - Located in ./local/bin and /usr/share/bin
 
