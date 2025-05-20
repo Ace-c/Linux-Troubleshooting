@@ -1,33 +1,39 @@
 
 ## 1. Package Cleansing :
 
-* **Clear Package Cache** -
+### Clear Package Cache :
   
 ```
 ```
-* **Remove Orphaned or Unused Package** -
+### Remove Orphaned or Unused Packages :
 
-To list packages :
+* To list packages 
 ```
 sudo pacman -Qtdq
 ```
-To remove everything that is listed :
+
+* To remove everything that is listed 
 ```
 sudo pacman -Rns $(pacman -Qtdq)
 ```
-```
--R flag remove packages
--n flag removes configuration files
--s flag removes dependencies that aren't required by other packages
-```
   
-Want to remove only particular package :
+* Want to remove only particular package 
 ```
 pacman -Rns 'package'
 ```
 
-* **Remove AUR builds** -
-To remove Manually :
+### Remove AUR builds :
+
+Clean yay -
+```
+yay -Scc
+```
+For Paru -
+```
+paru -Scc
+```
+
+To remove Manually -
 ```
 rm -rf ./*/ 
 ```
