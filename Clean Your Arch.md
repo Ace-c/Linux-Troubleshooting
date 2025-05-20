@@ -35,7 +35,7 @@ sudo pacman -Rns $(pacman -Qtdq)
   
 * Want to remove only particular package 
 ```
-pacman -Rns 'package'
+sudo pacman -Rns 'package'
 ```
 
 ### Remove AUR builds :
