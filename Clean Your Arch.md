@@ -11,15 +11,15 @@ sudo ls /var/cache/pacman/pkg/ | wc -l
 ```
 du -sh /var/cache/pacman/pkg/
 ```
+* Clean old versions while keeping the most recent ones
+```
+sudo pacman -Sc
+```
 * Remove all packages from the cache
 ```
 sudo pacman -Scc
 ```
 
-* Clean old versions while keeping the most recent ones
-```
-sudo pacman -Sc
-```
 
 ### Remove Orphaned or Unused Packages :
 
