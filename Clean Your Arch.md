@@ -113,6 +113,6 @@ sudo journalctl --vacuum-size=500M
 
 ## 5. Manually remove stuffs :
 
-**Remove bin files?**
-- Located in ./local/bin and /usr/share/bin
+**Bin files?**
+- Located in ./local/bin and /usr/bin
 
