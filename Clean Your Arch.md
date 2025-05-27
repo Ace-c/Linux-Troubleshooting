@@ -86,7 +86,7 @@ sudo rm -rf /var/tmp/*
 
 * Remove duplicates, empty files, empty directories and broken symlinks :
 ```
-sudo pacman -S rmlint
+yay -S rmlint-git
 ```
 ```
 rmlint
