@@ -113,6 +113,12 @@ sudo journalctl --vacuum-size=500M
 
 ## 5. Manually remove stuffs :
 
-**Bin files?**
+**Binaries**
 - Located in ./local/bin and /usr/bin
+
+**Config Files**
+- At ~/.config
+
+**You can find old files here**
+- ~/.local/share
 
