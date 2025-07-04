@@ -94,6 +94,7 @@ rmlint
 > [!CAUTION]
 > Do not run `rmlint` as `sudo`, will break your system libraries and other important stuff
 
+&nbsp;
 ## 4. System Logs & Journals :
 
 * Check space used by journals
@@ -115,11 +116,11 @@ sudo journalctl --vacuum-size=500M
 ## 5. Manually remove stuffs :
 
 **Binaries**
-- Located in ./local/bin and /usr/bin
+- Located in `./local/bin` and `/usr/bin`
 
 **Config Files**
-- At ~/.config
+- At `~/.config`
 
 **You can find old files here**
-- ~/.local/share
+- `~/.local/share`
 
