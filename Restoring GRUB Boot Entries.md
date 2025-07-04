@@ -37,14 +37,10 @@ arch-chroot /mnt
 ```
 
 ## Reinstall GRUB and Add Boot Entries :
-1. For UEFI
 ```bash
 grub-install --target=x86_64-efi --bootloader-id=ArchLinux --efi-directory=/boot/efi
 ```
-2. For BIOS/Legacy
-```
-grub-install --target=i386-pc /dev/sda2
-```
+
 ### Update GRUB
 ```bash
 grub-mkconfig -o /boot/grub/grub.cfg
