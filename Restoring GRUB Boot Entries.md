@@ -11,17 +11,17 @@
 lsblk
 ```
 
-### 2. Mount root partition
-*Note: Replace `/dev/sda6` with your root partition*
+### 2. Mount root and boot partition
 ```bash
-mount /dev/sda6 /mnt
+mount /dev/sda1 /mnt
 ```
+> Replace `/dev/sda1` with your root partition*
 
-### 3. Mount EFI partition
-*Note: Replace `/dev/sda5` with your EFI partition*
 ```bash
-mount /dev/sda5 /mnt/boot
+mount /dev/sda2 /mnt/boot
 ```
+> Replace `/dev/sda2` with your /boot partition*
+
 
 ### 4. Bind System Directories
 ```bash
@@ -36,11 +36,15 @@ mount --bind /run /mnt/run
 arch-chroot /mnt
 ```
 
-## Reinstall GRUB and Add Boot Entries
+## Reinstall GRUB and Add Boot Entries :
+1. For UEFI
 ```bash
 grub-install --target=x86_64-efi --bootloader-id=ArchLinux --efi-directory=/boot/efi
 ```
-
+2. For BIOS/Legacy
+```
+grub-install --target=i386-pc /dev/sda2
+```
 ### Update GRUB
 ```bash
 grub-mkconfig -o /boot/grub/grub.cfg
