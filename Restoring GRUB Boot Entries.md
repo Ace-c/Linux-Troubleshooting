@@ -31,7 +31,7 @@ mount --bind /sys /mnt/sys
 mount --bind /run /mnt/run
 ```
 
-## Chroot Into The System
+### 5. Chroot Into The System
 ```bash
 arch-chroot /mnt
 ```
