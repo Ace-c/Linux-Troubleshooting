@@ -91,7 +91,8 @@ yay -S rmlint-git
 ```
 rmlint
 ```
-
+> [!IMPORTANT]
+> Do not run `rmlint` as `sudo`, will break your system libraries and other important stuff
 
 ## 4. System Logs & Journals :
 
