@@ -23,4 +23,4 @@ options snd_hda_intel power_save=0
 ```
 
 * Save the file and exit.
-* Reboot your system, to check wheather it's working or not.
+* Reboot your system, son...
