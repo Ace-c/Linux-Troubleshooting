@@ -1,5 +1,5 @@
 
-# Restoring GRUB Boot Entries
+# Restoring GRUB Boot Entries (UEFI)
 
 ## Boot Into Live Environment
 - You can use Arch ISO or any other Linux ISO available to you
